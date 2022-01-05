@@ -1,0 +1,179 @@
+body {
+  font-family: 'Itim', cursive;
+}
+
+
+.jumbotron1 {
+  margin: 0;
+  background-image: url("jumboImage.jpg");
+  color: white;
+  background-size: cover;
+  text-align: center;
+  height: 550px;
+  position: relative;
+  
+}
+
+.content-holder {
+  position: absolute;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Courgette', sans-serif;
+
+}
+
+.navbar-dark {
+  margin-bottom: 0;
+  background-color:rgb(241, 241, 64);
+}
+
+.navLink {
+  position: aboslute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+  font-size: x-large;
+}
+
+
+.navPic1 {
+  left: 0;
+}
+
+h2, p {
+  text-align: center;
+  
+}
+
+.cardBtn {
+  position: absolute;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%);
+}
+
+
+.jumbotron2 {
+  margin: 0;
+  background-image: url("jumboImage2.jpg");
+  color: white;
+  background-size: cover;
+  text-align: center;
+  height: 750px;
+  position: relative;
+  
+}
+
+.jumboFooter{
+  margin: 0;
+  background-color: rgb(253, 174, 171)
+}
+
+.jumboAbout {
+  margin: 0;
+  background-color: rgb(238, 146, 70);
+  text-align: center;
+  font-size: large;
+}
+
+.divAbout {
+  padding-left: 80pt;
+  padding-right: 80pt;
+}
+
+.navItems {
+  position: relative;
+}
+
+.TicketsTitle {
+  text-align: center;
+  font-size: x-large;
+  padding-top: 10pt;
+}
+
+.ticket-head{
+  text-align: center;
+  font-size: xx-large;
+}
+
+.cardImage {
+  background-image: url("Cookies.PNG");
+  height: 460px;
+  background-size: 645px;
+}
+
+.cardImage2 {
+  background-image: url("Drinks.jpg");
+  height: 460px;
+  background-size: 690px;
+}
+
+.cardImage3 {
+  background-image: url("Fries.PNG");
+  height: 460px;
+  background-size: 690px;
+}
+
+.navPic2 {
+  background-image: url("logo.png");
+  background-size: 70px;
+  height: 70px;
+  width: 70px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.fa-shopping-cart {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.TicketJumbo {
+  margin: 0;
+}
+
+.TicketContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  padding-bottom: 100px;
+}
+
+.TicketCard {
+  margin: 50px;
+  padding: 40px;
+  background-color: salmon;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.addToCart {
+  width:100%;
+  background-color: rgb(210, 212, 54);
+  transition: all 0.1s ease-in;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cart1,
+.cart2 {
+  bottom: 0px;
+  opacity: 1;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+}
