@@ -1,7 +1,6 @@
 {
   "name": "portfolio-project-react",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://courtneyyatteau.github.io/Food-Festival-Site/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
