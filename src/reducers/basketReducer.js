@@ -1,4 +1,4 @@
-import { ADD_PRODUCT_BASKET, GET_NUMBERS_BASKET } from "../Components/actions/types";
+import { ADD_PRODUCT_BASKET, GET_NUMBERS_BASKET, DELETE_PRODUCT_BASKET } from "../Components/actions/types";
 
 const initialState = {
     basketNumbers: 0
@@ -13,6 +13,10 @@ export default(state = initialState, action) => {
         case GET_NUMBERS_BASKET:
             return {
                 ...state
+            }
+        case DELETE_PRODUCT_BASKET:
+            return {
+                basketNumbers: state.basketNumbers - 1
             }
         default:
             return state;
