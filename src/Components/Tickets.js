@@ -3,8 +3,8 @@ import { render } from 'react-dom';
 import { Jumbotron, UncontrolledCollapse, Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap';
 import Footer from './Footer';
 import { connect } from 'react-redux';
-import { addBasket } from '../Components/actions/addAction'
-
+import { addBasket } from '../Components/actions/addAction';
+import { deleteBasket } from '../Components/actions/deleteAction';
 
 const Tickets = (props) => {
     console.log(props);
@@ -53,11 +53,13 @@ const Tickets = (props) => {
               <h3>General <br />Admission</h3>
               <h3>$50</h3>
               <a onClick = {props.addBasket} className="addToCart cart1" href="#">Add to Cart</a>
+              <a onClick = {props.deleteBasket} className="addToCart cart1" href="#">Delete from Cart</a>
             </Card>
             <Card className="TicketCard">
               <h3>VIP<br />Admission</h3>
               <h3>$80</h3>
               <a onClick = {props.addBasket} className="addToCart cart2" href="#">Add to Cart</a>
+              <a onClick = {props.deleteBasket} className="addToCart cart1" href="#">Delete from Cart</a>
             </Card>
           </div>
         </Jumbotron>
