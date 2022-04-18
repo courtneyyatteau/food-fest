@@ -24,7 +24,7 @@ function Navigation(props) {
   return (
     <React.Fragment>
       <Nav navbar className="navItems">
-        <Navbar expand="xs" dark sticky="top" variant="light">
+        <Navbar expand="lg" dark sticky="top" variant="light">
           <div className="container">
             <NavbarBrand className="navPic1">
               <Card>
@@ -32,36 +32,34 @@ function Navigation(props) {
               </Card>
             </NavbarBrand>
             <NavbarToggler />
-            <Collapse navbar>
-              <NavItem>
-                <Link className="navLink" to="/">
-                  Home{" "}
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link className="navLink" to="/about">
-                  About
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link className="navLink" to="/tickets">
-                  Tickets
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link className="navLink" to="/faq">
-                  FAQ
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link className="navLink">
-                  <i className="fa fa-shopping-cart">
-                    {" "}
-                    Cart <span>({props.basketProps.basketNumbers})</span>
-                  </i>
-                </Link>
-              </NavItem>
-            </Collapse>
+            <NavItem>
+              <Link className="navLink" to="/">
+                Home{" "}
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="navLink" to="/about">
+                About
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="navLink" to="/tickets">
+                Tickets
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="navLink" to="/faq">
+                FAQ
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="navLink">
+                <i className="fa fa-shopping-cart">
+                  {" "}
+                  Cart <span>({props.basketProps.basketNumbers})</span>
+                </i>
+              </Link>
+            </NavItem>
           </div>
         </Navbar>
       </Nav>
