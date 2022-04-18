@@ -15,7 +15,7 @@ function Navigation(props) {
     return (
         <React.Fragment>
             <Nav navbar className="navItems">
-                <Navbar dark sticky="top" expand="lg" variant="light" >
+                <Navbar dark sticky="top" variant="light" >
                     <div className="container">
                         <NavbarBrand className="navPic1" >
                             <Card>
