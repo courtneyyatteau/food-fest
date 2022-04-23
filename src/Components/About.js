@@ -1,8 +1,6 @@
 import React, { useState, Component } from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Jumbotron, Button, Modal, ModalHeader, ModalBody, ModalFooter, Container, Col, Form, FormGroup, Label,
-Input } from 'reactstrap';
+import { Jumbotron, Button, Modal, ModalHeader, ModalBody, ModalFooter, Label } from 'reactstrap';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
  

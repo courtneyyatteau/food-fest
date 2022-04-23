@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Jumbotron, Button } from 'reactstrap';
-import { Switch, Route, Redirect, Link } from 'react-router-dom';
+import { Card, CardImg, CardText, CardBody, Jumbotron, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import Footer from './Footer';
  
 const home = () => {
@@ -22,7 +22,7 @@ const home = () => {
             </div>
             <div className="row">
                 <Card className="col-md-4">
-                    <CardBody className>
+                    <CardBody>
                         <CardImg className="cardImage"></CardImg>
                         <Link to="/about"><Button className="cardBtn"><CardText>About</CardText></Button></Link>
                     </CardBody>

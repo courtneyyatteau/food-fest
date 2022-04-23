@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, UncontrolledPopover, PopoverHeader, PopoverBody} from 'reactstrap';
+import { Button} from 'reactstrap';
 import Footer from './Footer';
 import { Accordion, Card } from 'react-bootstrap';
 

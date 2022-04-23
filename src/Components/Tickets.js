@@ -1,11 +1,7 @@
-import React, { Component, useState } from "react";
-import { render } from "react-dom";
+import React from "react";
 import {
   Jumbotron,
-  UncontrolledCollapse,
   Card,
-  CardImg,
-  CardText,
   CardBody,
   CardTitle,
 } from "reactstrap";

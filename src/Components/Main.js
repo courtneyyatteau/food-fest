@@ -4,8 +4,7 @@ import About from './About';
 import Faq from './Faq';
 import Navigation from './Navigation';
 import Tickets from './Tickets';
-import Footer from './Footer';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { Switch, Route, Redirect} from 'react-router-dom';
 
 class Main extends Component {
     render() {
