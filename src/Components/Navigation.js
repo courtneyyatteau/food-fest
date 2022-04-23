@@ -12,11 +12,19 @@ function Navigation(props) {
 
   return (
     <React.Fragment>
-      <Navbar bg="light" sticky="top" expand="lg" className="navbar-dark">
+      <Navbar
+        bg="dark"
+        variant="light"
+        sticky="top"
+        expand="lg"
+        className="navbar-dark"
+      >
         <Container className="container">
           <Navbar.Brand href="#home" className="navPic1">
             <Card>
-              <div className="navPic2"></div>
+              <Link to="/">
+                <div className="navPic2"></div>
+              </Link>
             </Card>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
