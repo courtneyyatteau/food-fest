@@ -1,7 +1,8 @@
 {
   "name": "food-festival-app",
   "version": "0.1.0",
-  "homepage": "https://courtneyyatteau.github.io/Food-Festival-Site/",
+    "private": true,
+  "homepage": "https://courtneyyatteau.github.io/food-fest",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -28,11 +29,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,18 +50,11 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
-  },
   "description": "This is a fake food festival site used to spark user interest through photos and information.",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/courtneyyatteau/Food-Festival-Site.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/courtneyyatteau/Food-Festival-Site/issues"
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
