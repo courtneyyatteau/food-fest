@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Navbar, NavDropdown, Container, Nav, Card } from "react-bootstrap";
+import { Navbar, Container, Nav, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import { connect } from "react-redux";
@@ -51,7 +51,7 @@ function Navigation(props) {
                 </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link className="navLink">
+                <Link className="navLink" to="/cart">
                   <i className="fa fa-shopping-cart">
                     Cart <span>({props.basketProps.basketNumbers})</span>
                   </i>

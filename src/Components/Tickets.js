@@ -1,17 +1,27 @@
-import React from "react";
-import {
-  Jumbotron,
-  Card,
-  CardBody,
-  CardTitle,
-} from "reactstrap";
+import React, { useState } from "react";
+import { Jumbotron, Card, CardBody, CardTitle } from "reactstrap";
 import Footer from "./Footer";
 import { connect } from "react-redux";
 import { addBasket } from "../Components/actions/addAction";
 import { deleteBasket } from "../Components/actions/deleteAction";
+//import Cart from "./Cart";
 
-const Tickets = (props) => {
+function Tickets(props) {
+  //const [gaNumbers, setgaNumbers] = useState(0);
+  //const [vipNumbers, setvipNumbers] = useState(0);
+
   console.log(props);
+
+  const addGA = () => {
+    props.addBasket();
+    //setgaNumbers((gaNumbers) => gaNumbers + 1);
+  };
+
+  const addVIP = () => {
+    props.addBasket();
+    //setvipNumbers((vipNumbers) => vipNumbers + 1);
+  };
+
   return (
     <React.Fragment>
       <Jumbotron className="TicketJumbo">
@@ -65,17 +75,21 @@ const Tickets = (props) => {
               Admission
             </h3>
             <h3>$50</h3>
-            <a onClick={props.addBasket} className="addToCart cart1" href="#">
+            <button
+              onClick={() => addGA()}
+              className="addToCart cart1"
+              href="#"
+            >
               Add to Cart
-            </a>
+            </button>
             <br />
-            <a
+            <button
               onClick={props.deleteBasket}
               className="addToCart cart1"
               href="#"
             >
               Delete from Cart
-            </a>
+            </button>
           </Card>
           <Card className="TicketCard">
             <h3>
@@ -84,23 +98,27 @@ const Tickets = (props) => {
               Admission
             </h3>
             <h3>$80</h3>
-            <a onClick={props.addBasket} className="addToCart cart2" href="#">
+            <button
+              onClick={() => addVIP()}
+              className="addToCart cart2"
+              href="#"
+            >
               Add to Cart
-            </a>
+            </button>
             <br />
-            <a
+            <button
               onClick={props.deleteBasket}
               className="addToCart cart1"
               href="#"
             >
               Delete from Cart
-            </a>
+            </button>
           </Card>
         </div>
       </Jumbotron>
       <Footer />
     </React.Fragment>
   );
-};
+}
 
 export default connect(null, { addBasket, deleteBasket })(Tickets);
