@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import { Jumbotron, Card, CardBody, CardTitle } from "reactstrap";
 import Footer from "./Footer";
 import { connect } from "react-redux";

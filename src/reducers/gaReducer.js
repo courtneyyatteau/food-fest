@@ -1,6 +1,7 @@
 import { ADD_GA_PRODUCT } from "../Components/actions/types";
 import { DELETE_GA_PRODUCT } from "../Components/actions/types";
 import { GET_GA_PRODUCT } from "../Components/actions/types";
+import { EMPTY_GA_BASKET } from "../Components/actions/types";
 
 const initialState = {
   gaNumbers: 0,
@@ -26,6 +27,8 @@ function ga(state = initialState, action) {
           gaNumbers: state.gaNumbers - 1,
         };
       }
+    case EMPTY_GA_BASKET:
+      return initialState;
     default:
       return {
         gaNumbers: state.gaNumbers,

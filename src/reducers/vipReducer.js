@@ -1,6 +1,7 @@
 import { ADD_VIP_PRODUCT } from "../Components/actions/types";
 import { DELETE_VIP_PRODUCT } from "../Components/actions/types";
 import { GET_VIP_PRODUCT } from "../Components/actions/types";
+import { EMPTY_VIP_BASKET } from "../Components/actions/types";
 
 const initialState = {
   vipNumbers: 0,
@@ -26,6 +27,8 @@ function vip(state = initialState, action) {
           vipNumbers: state.vipNumbers - 1,
         };
       }
+    case EMPTY_VIP_BASKET:
+      return initialState;
     default:
       return {
         vipNumbers: state.vipNumbers,

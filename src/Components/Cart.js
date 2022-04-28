@@ -3,6 +3,10 @@ import { connect } from "react-redux";
 import { getNumbers } from "./actions/getAction";
 import { getGaNumbers } from "./actions/getGaAction";
 import { getVipNumbers } from "./actions/getVipAction";
+import { emptyBasket } from "./actions/emptyBasketAction";
+import { emptyGaBasket } from "./actions/emptyGaBasket";
+import { emptyVipBasket } from "./actions/emptyVipBasket";
+
 import { Card, CardText, CardTitle, Button } from "reactstrap";
 
 function Cart(props) {
@@ -11,13 +15,22 @@ function Cart(props) {
     getGaNumbers();
     getVipNumbers();
   }, []);
+
+  const handleClick = () => {
+    props.emptyBasket();
+    props.emptyGaBasket();
+    props.emptyVipBasket();
+  };
+
   return (
     <Card body className="cartStuff">
       <CardTitle>Shopping Cart</CardTitle>
       <CardText>Total Tickets: {props.basketProps.basketNumbers} </CardText>
       <CardText>GA Tickets: {props.gaProps.gaNumbers}</CardText>
       <CardText>VIP Tickets: {props.vipProps.vipNumbers}</CardText>
-      <Button className="cartButton">Empty Cart</Button>
+      <Button className="cartButton" onClick={handleClick}>
+        Empty Cart
+      </Button>
     </Card>
   );
 }
@@ -32,4 +45,7 @@ export default connect(mapStateToProps, {
   getNumbers,
   getGaNumbers,
   getVipNumbers,
+  emptyBasket,
+  emptyGaBasket,
+  emptyVipBasket,
 })(Cart);

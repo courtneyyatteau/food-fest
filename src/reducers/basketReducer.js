@@ -2,6 +2,7 @@ import {
   ADD_PRODUCT_BASKET,
   GET_NUMBERS_BASKET,
   DELETE_PRODUCT_BASKET,
+  EMPTY_BASKET,
 } from "../Components/actions/types";
 
 const initialState = {
@@ -28,6 +29,8 @@ function basket(state = initialState, action) {
           basketNumbers: state.basketNumbers - 1,
         };
       }
+    case EMPTY_BASKET:
+      return initialState;
     default:
       return {
         basketNumbers: state.basketNumbers,

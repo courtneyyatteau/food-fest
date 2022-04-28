@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { useState } from 'react';
 import { Jumbotron, Button, Modal, ModalHeader, ModalBody, ModalFooter, Label } from 'reactstrap';
 import Footer from './Footer';
 import { Control, LocalForm, Errors } from 'react-redux-form';
@@ -9,28 +9,8 @@ const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
-class NewsLetter extends Component {
-    constructor(props) {
-        super(props);
-
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleSubmit(values) {
-        alert('Current state is: ' + JSON.stringify(values));
-        console.log('Current state is: ' + JSON.stringify(values));
-    }
-
-    return() {
-        return (
-            <About />
-        )
-    }
-}
-
 const About = (props) => {
     const {
-        buttonLabel,
         className
       } = props;
     
@@ -63,7 +43,7 @@ const About = (props) => {
                         <LocalForm className="form">
                             <div className="form-group">
                                 <Label htmlFor="firstName"></Label>
-                                <Control.text model=".firstName" name="firstName" id="firstName" placeholder="First Name" className="form-control"
+                                <Control.Text model=".firstName" name="firstName" id="firstName" placeholder="First Name" className="form-control"
                                     validators={{
                                         minLength: minLength(2),
                                         maxLength: maxLength(15)
@@ -84,7 +64,7 @@ const About = (props) => {
 
                             <div>
                                 <Label htmlFor="lastName"></Label>
-                                <Control.text model=".lastName" name="lastName" id="lastName" placeholder="Last Name" className="form-control"
+                                <Control.Text model=".lastName" name="lastName" id="lastName" placeholder="Last Name" className="form-control"
                                     validators={{
                                         minLength: minLength(2),
                                         maxLength: maxLength(15)
@@ -104,7 +84,7 @@ const About = (props) => {
 
                             <div>
                                 <Label htmlFor="email"></Label>
-                                <Control.text model=".email" id="email" name="email" placeholder="Email" className="form-control"
+                                <Control.Text model=".email" id="email" name="email" placeholder="Email" className="form-control"
                                     validators={{
                                         validEmail
                                     }}
