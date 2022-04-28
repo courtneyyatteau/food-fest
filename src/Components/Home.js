@@ -10,8 +10,8 @@ const home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col content-holder">
-                            <h1>Indulgent Fest</h1>
-                            <h3>Extravagent Food and Drink Festival</h3>
+                            <h1 className="home-header">Indulgent Fest</h1>
+                            <h3 className="home-h3">Extravagent Food and Drink Festival</h3>
                         </div>
                     </div>
                 </div>

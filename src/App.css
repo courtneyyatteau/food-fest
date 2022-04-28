@@ -3,12 +3,11 @@ body {
 }
 
 .jumbotron1 {
-  margin: 0;
+  margin-top: 100px;
   background-image: url("jumboImage.jpg");
   color: white;
   background-size: cover;
   text-align: center;
-  height: 550px;
   position: relative;
 }
 
@@ -23,6 +22,7 @@ body {
 h1 {
   font-size: 100px;
   font-family: "Courgette", sans-serif;
+  text-align: center;
 }
 
 .navbar-dark {
@@ -36,8 +36,6 @@ h1 {
   left: 0;
   z-index: 2;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding: 50px 60px 0 60px;
   font-size: x-large;
   color: white;
@@ -52,6 +50,7 @@ h1 {
 }
 
 h2,
+h3,
 p {
   text-align: center;
 }
@@ -64,13 +63,29 @@ p {
 }
 
 .jumbotron2 {
-  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 0;
   background-image: url("jumboImage2.jpg");
   color: white;
   background-size: cover;
   text-align: center;
-  height: 750px;
+  height: 400px;
   position: relative;
+}
+
+.jumbotron3 {
+  margin-top: 100px;
+  margin-bottom: 0;
+  background-image: url("jumboImage3.jpg");
+  color: white;
+  background-size: cover;
+  text-align: center;
+  height: 350px;
+  position: relative;
+}
+
+.faq-header {
+  margin: 0 auto;
 }
 
 .jumboFooter {
@@ -185,11 +200,41 @@ p {
 .cartStuff {
   font-size: 30px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 120px auto;
 }
 
 @media (max-width: 1000px) {
   .cartButton {
     width: 30%;
+  }
+  .jumbotron1,
+  .jumbotron2,
+  .jumbotron3 {
+    height: 350px;
+  }
+  .home-header,
+  .about-header {
+    font-size: 350%;
+  }
+  .cart-header {
+    font-size: 175%;
+  }
+  .home-h3 {
+    font-size: 125%;
+  }
+  .cardImage,
+  .cardImage2,
+  .cardImage3 {
+    height: 250px;
+    background-size: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navLink {
+    margin-right: 100px;
+  }
+  .jumbotron1 {
+    height: 400px;
   }
 }

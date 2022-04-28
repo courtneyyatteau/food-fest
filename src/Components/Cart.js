@@ -24,7 +24,8 @@ function Cart(props) {
 
   return (
     <Card body className="cartStuff">
-      <CardTitle>Shopping Cart</CardTitle>
+      <h1 className="cart-header">Shopping Cart</h1>
+      <br />
       <CardText>Total Tickets: {props.basketProps.basketNumbers} </CardText>
       <CardText>GA Tickets: {props.gaProps.gaNumbers}</CardText>
       <CardText>VIP Tickets: {props.vipProps.vipNumbers}</CardText>
