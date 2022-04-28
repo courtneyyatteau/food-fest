@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/food-fest/static/css/main.beccd66f.chunk.css",
-    "main.js": "/food-fest/static/js/main.1f6e24f3.chunk.js",
-    "main.js.map": "/food-fest/static/js/main.1f6e24f3.chunk.js.map",
+    "main.js": "/food-fest/static/js/main.b8cb5524.chunk.js",
+    "main.js.map": "/food-fest/static/js/main.b8cb5524.chunk.js.map",
     "runtime-main.js": "/food-fest/static/js/runtime-main.ff539838.js",
     "runtime-main.js.map": "/food-fest/static/js/runtime-main.ff539838.js.map",
     "static/css/2.ad153c41.chunk.css": "/food-fest/static/css/2.ad153c41.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.ad153c41.chunk.css",
     "static/js/2.fccdfce8.chunk.js",
     "static/css/main.beccd66f.chunk.css",
-    "static/js/main.1f6e24f3.chunk.js"
+    "static/js/main.b8cb5524.chunk.js"
   ]
 }
