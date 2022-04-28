@@ -7,7 +7,7 @@ import { emptyBasket } from "./actions/emptyBasketAction";
 import { emptyGaBasket } from "./actions/emptyGaBasket";
 import { emptyVipBasket } from "./actions/emptyVipBasket";
 
-import { Card, CardText, CardTitle, Button } from "reactstrap";
+import { Card, CardText, Button } from "reactstrap";
 
 function Cart(props) {
   useEffect(() => {

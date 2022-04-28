@@ -48,11 +48,13 @@ function Navigation(props) {
               <Nav.Link as={Link} className="navLink" to="/faq" href="/faq">
                 FAQ
               </Nav.Link>
-              <Nav.Link className="navLink" to="/cart" href="/cart">
-                <i className="fa fa-shopping-cart">
-                  Cart <span>({props.basketProps.basketNumbers})</span>
-                </i>
-              </Nav.Link>
+              <Link>
+                <Nav.Link as={Link} className="navLink" to="/cart" href="/cart">
+                  <i className="fa fa-shopping-cart">
+                    Cart <span>({props.basketProps.basketNumbers})</span>
+                  </i>
+                </Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
