@@ -4,22 +4,32 @@ import Footer from "./Footer";
 import { connect } from "react-redux";
 import { addBasket } from "../Components/actions/addAction";
 import { deleteBasket } from "../Components/actions/deleteAction";
-//import Cart from "./Cart";
+import { addGA } from "../Components/actions/addGaAction";
+import { deleteGA } from "../Components/actions/deleteGaAction";
+import { addVIP } from "../Components/actions/addVipAction";
+import { deleteVIP } from "../Components/actions/deleteVipAction";
 
 function Tickets(props) {
-  //const [gaNumbers, setgaNumbers] = useState(0);
-  //const [vipNumbers, setvipNumbers] = useState(0);
-
   console.log(props);
 
-  const addGA = () => {
+  const addGa = () => {
     props.addBasket();
-    //setgaNumbers((gaNumbers) => gaNumbers + 1);
+    props.addGA();
+  };
+
+  const deleteGa = () => {
+    props.deleteBasket();
+    props.deleteGA();
   };
 
   const addVIP = () => {
     props.addBasket();
-    //setvipNumbers((vipNumbers) => vipNumbers + 1);
+    props.addVIP();
+  };
+
+  const deleteVIP = () => {
+    props.deleteBasket();
+    props.deleteVIP();
   };
 
   return (
@@ -76,7 +86,7 @@ function Tickets(props) {
             </h3>
             <h3>$50</h3>
             <button
-              onClick={() => addGA()}
+              onClick={() => addGa()}
               className="addToCart cart1"
               href="#"
             >
@@ -84,7 +94,7 @@ function Tickets(props) {
             </button>
             <br />
             <button
-              onClick={props.deleteBasket}
+              onClick={() => deleteGa()}
               className="addToCart cart1"
               href="#"
             >
@@ -107,7 +117,7 @@ function Tickets(props) {
             </button>
             <br />
             <button
-              onClick={props.deleteBasket}
+              onClick={() => deleteVIP()}
               className="addToCart cart1"
               href="#"
             >
@@ -121,4 +131,11 @@ function Tickets(props) {
   );
 }
 
-export default connect(null, { addBasket, deleteBasket })(Tickets);
+export default connect(null, {
+  addBasket,
+  deleteBasket,
+  addGA,
+  deleteGA,
+  addVIP,
+  deleteVIP,
+})(Tickets);
