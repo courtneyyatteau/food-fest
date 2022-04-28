@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/food-fest/static/css/main.beccd66f.chunk.css",
-    "main.js": "/food-fest/static/js/main.2d908bd4.chunk.js",
-    "main.js.map": "/food-fest/static/js/main.2d908bd4.chunk.js.map",
-    "runtime-main.js": "/food-fest/static/js/runtime-main.ff539838.js",
-    "runtime-main.js.map": "/food-fest/static/js/runtime-main.ff539838.js.map",
+    "main.css": "/food-fest/static/css/main.bd897c32.chunk.css",
+    "main.js": "/food-fest/static/js/main.ea27bfdc.chunk.js",
+    "main.js.map": "/food-fest/static/js/main.ea27bfdc.chunk.js.map",
+    "runtime-main.js": "/food-fest/static/js/runtime-main.85756d8c.js",
+    "runtime-main.js.map": "/food-fest/static/js/runtime-main.85756d8c.js.map",
     "static/css/2.ad153c41.chunk.css": "/food-fest/static/css/2.ad153c41.chunk.css",
-    "static/js/2.fccdfce8.chunk.js": "/food-fest/static/js/2.fccdfce8.chunk.js",
-    "static/js/2.fccdfce8.chunk.js.map": "/food-fest/static/js/2.fccdfce8.chunk.js.map",
-    "static/js/3.cf16e251.chunk.js": "/food-fest/static/js/3.cf16e251.chunk.js",
-    "static/js/3.cf16e251.chunk.js.map": "/food-fest/static/js/3.cf16e251.chunk.js.map",
+    "static/js/2.169a3854.chunk.js": "/food-fest/static/js/2.169a3854.chunk.js",
+    "static/js/2.169a3854.chunk.js.map": "/food-fest/static/js/2.169a3854.chunk.js.map",
+    "static/js/3.9d127493.chunk.js": "/food-fest/static/js/3.9d127493.chunk.js",
+    "static/js/3.9d127493.chunk.js.map": "/food-fest/static/js/3.9d127493.chunk.js.map",
     "index.html": "/food-fest/index.html",
     "static/css/2.ad153c41.chunk.css.map": "/food-fest/static/css/2.ad153c41.chunk.css.map",
-    "static/css/main.beccd66f.chunk.css.map": "/food-fest/static/css/main.beccd66f.chunk.css.map",
-    "static/js/2.fccdfce8.chunk.js.LICENSE.txt": "/food-fest/static/js/2.fccdfce8.chunk.js.LICENSE.txt",
+    "static/css/main.bd897c32.chunk.css.map": "/food-fest/static/css/main.bd897c32.chunk.css.map",
+    "static/js/2.169a3854.chunk.js.LICENSE.txt": "/food-fest/static/js/2.169a3854.chunk.js.LICENSE.txt",
     "static/media/App.css": "/food-fest/static/media/logo.914a58ac.png",
     "static/media/font-awesome.css": "/food-fest/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff539838.js",
+    "static/js/runtime-main.85756d8c.js",
     "static/css/2.ad153c41.chunk.css",
-    "static/js/2.fccdfce8.chunk.js",
-    "static/css/main.beccd66f.chunk.css",
-    "static/js/main.2d908bd4.chunk.js"
+    "static/js/2.169a3854.chunk.js",
+    "static/css/main.bd897c32.chunk.css",
+    "static/js/main.ea27bfdc.chunk.js"
   ]
 }
