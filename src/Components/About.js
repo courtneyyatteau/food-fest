@@ -1,118 +1,98 @@
-import React, { useState } from 'react';
-import { Jumbotron, Button, Modal, ModalHeader, ModalBody, ModalFooter, Label } from 'reactstrap';
-import Footer from './Footer';
-import { Control, LocalForm, Errors } from 'react-redux-form';
+import React from "react";
+import { Jumbotron, Button, Form } from "reactstrap";
+import Footer from "./Footer";
+import { Modal } from "react-bootstrap";
 
- 
-
-const maxLength = len => val => !val || (val.length <= len);
-const minLength = len => val => val && (val.length >= len);
-const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Newsletter Signup
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <form>
+          <div className="form-group">
+            <label for="exampleInputName1">Full Name</label>
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputName1"
+              aria-describedby="emailHelp"
+              placeholder="Enter first and last name"
+            />
+          </div>
+          <div className="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" className="form-text text-muted">
+              We'll never share your email with anyone else.
+            </small>
+          </div>
+        </form>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button
+          onClick={props.onHide}
+          type="submit"
+          className="btn btn-primary"
+        >
+          Submit
+        </Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 
 const About = (props) => {
-    const {
-        className
-      } = props;
-    
-      const [modal, setModal] = useState(false);
-    
-      const toggle = () => setModal(!modal);
+  const [modalShow, setModalShow] = React.useState(false);
 
-        return (
-        <React.Fragment>
-            <Jumbotron className="jumbotron2" fluid>
-                <div className="container">
-                        <div className="row">
-                            <div className="col content-holder">
-                                <h1 className="about-header">About Us</h1>
-                            </div>
-                        </div>
-                    </div>
-            </Jumbotron>
-            <Jumbotron className="jumboAbout" fluid>
-                <div className="divAbout">
-                    <h2>Indulge Your Senses</h2>
-                    Indulgent Fest was created to showcase chefs and food creators to the public. People who love to eat have the opportunity to engage with creative food curators, sample food and drinks, and purchase items.
-                    People who come to Indulgent Fest have come to expect absolute bliss from our wildly impressive chefs from all over the country. 
-                </div>
-                <br />
-                <Button color="primary" onClick={toggle}>NewsLetter Signup</Button>
-                <Modal isOpen={modal} toggle={toggle} className={className}>
-                    <ModalHeader className="modHead" toggle={toggle}>Stay Informed! <p>Sign up with your email to receive updates.</p></ModalHeader>
-                    <ModalBody> 
-                        <LocalForm className="form">
-                            <div className="form-group">
-                                <Label htmlFor="firstName"></Label>
-                                <Control.Text model=".firstName" name="firstName" id="firstName" placeholder="First Name" className="form-control"
-                                    validators={{
-                                        minLength: minLength(2),
-                                        maxLength: maxLength(15)
-                                    }}
-                                />
-                                <Errors
-                                    className="text-danger"
-                                    model=".firstName"
-                                    show="touched"
-                                    component="div"
-                                    messages={{
-                                        minLength: 'Must be at least 2 characters',
-                                        maxLength: 'Must be 15 characters or less'
-                                    }}
-                                />
-                            </div>
- 
+  return (
+    <React.Fragment>
+      <Jumbotron className="jumbotron2" fluid>
+        <div className="container">
+          <div className="row">
+            <div className="col content-holder">
+              <h1 className="about-header">About Us</h1>
+            </div>
+          </div>
+        </div>
+      </Jumbotron>
+      <Jumbotron className="jumboAbout" fluid>
+        <div className="divAbout">
+          <h2>Indulge Your Senses</h2>
+          Indulgent Fest was created to showcase chefs and food creators to the
+          public. People who love to eat have the opportunity to engage with
+          creative food curators, sample food and drinks, and purchase items.
+          People who come to Indulgent Fest have come to expect absolute bliss
+          from our wildly impressive chefs from all over the country.
+        </div>
+        <br />
+        <Button variant="primary" onClick={() => setModalShow(true)}>
+          Newsletter Signup
+        </Button>
 
-                            <div>
-                                <Label htmlFor="lastName"></Label>
-                                <Control.Text model=".lastName" name="lastName" id="lastName" placeholder="Last Name" className="form-control"
-                                    validators={{
-                                        minLength: minLength(2),
-                                        maxLength: maxLength(15)
-                                    }}
-                                />
-                                <Errors
-                                    className="text-danger"
-                                    model=".lastName"
-                                    show="touched"
-                                    component="div"
-                                    messages={{
-                                        minLength: 'Must be at least 2 characters',
-                                        maxLength: 'Must be 15 characters or less'
-                                    }}
-                                />
-                            </div>
+        <MyVerticallyCenteredModal
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+      </Jumbotron>
 
-                            <div>
-                                <Label htmlFor="email"></Label>
-                                <Control.Text model=".email" id="email" name="email" placeholder="Email" className="form-control"
-                                    validators={{
-                                        validEmail
-                                    }}
-                                />
-                                <Errors
-                                        className="text-danger"
-                                        model=".email"
-                                        show="touched"
-                                        component="div"
-                                        messages={{
-                                            required: 'Required',
-                                            validEmail: 'Invalid email address'
-                                        }}
-                                />
-                            </div>
+      <Footer />
+    </React.Fragment>
+  );
+};
 
-                        </LocalForm>
-                    </ModalBody>
-                    <ModalFooter>
-                        <Button color="primary" onClick={toggle}>Submit</Button>{' '}
-                        <Button color="secondary" onClick={toggle}>Cancel</Button>
-                    </ModalFooter>
-                </Modal>
-            </Jumbotron>
-            
-            <Footer />
-        </React.Fragment>
-        );
-    }
- 
 export default About;
