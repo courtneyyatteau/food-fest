@@ -201,6 +201,21 @@ p {
   margin: 120px auto;
 }
 
+.first-image {
+  --animate-duration: 1s;
+  --animate-delay: 0.9s;
+}
+
+.second-image {
+  --animate-duration: 2s;
+  --animate-delay: 2s;
+}
+
+.third-image {
+  --animate-duration: 3s;
+  --animate-delay: 3s;
+}
+
 @media (max-width: 1000px) {
   .cartButton {
     width: 30%;

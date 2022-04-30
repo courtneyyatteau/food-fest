@@ -1,12 +1,13 @@
 {
   "name": "food-festival-app",
   "version": "0.1.0",
-    "private": true,
+  "private": true,
   "homepage": "https://courtneyyatteau.github.io/food-fest",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.6.1",
     "bootstrap-social": "5.1.1",
     "font-awesome": "^4.7.0",
