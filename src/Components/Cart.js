@@ -26,9 +26,10 @@ function Cart(props) {
     <Card body className="cartStuff">
       <h1 className="cart-header">Shopping Cart</h1>
       <br />
-      <CardText>Total Tickets: {props.basketProps.basketNumbers} </CardText>
       <CardText>GA Tickets: {props.gaProps.gaNumbers}</CardText>
       <CardText>VIP Tickets: {props.vipProps.vipNumbers}</CardText>
+      <CardText>Total Tickets: {props.basketProps.basketNumbers} </CardText>
+
       <Button className="cartButton" onClick={handleClick}>
         Empty Cart
       </Button>

@@ -65,19 +65,26 @@ const About = (props) => {
         <div className="container">
           <div className="row">
             <div className="col content-holder">
-              <h1 className="about-header">About Us</h1>
+              <h1 className="about-header animate__animated animate__backInDown ">
+                About Us
+              </h1>
             </div>
           </div>
         </div>
       </Jumbotron>
       <Jumbotron className="jumboAbout" fluid>
         <div className="divAbout">
-          <h2>Indulge Your Senses</h2>
-          Indulgent Fest was created to showcase chefs and food creators to the
-          public. People who love to eat have the opportunity to engage with
-          creative food curators, sample food and drinks, and purchase items.
-          People who come to Indulgent Fest have come to expect absolute bliss
-          from our wildly impressive chefs from all over the country.
+          <h2 className="animate__animated animate__bounce">
+            Indulge Your Senses
+          </h2>
+          <div className="animate__animated animate__bounce">
+            Indulgent Fest was created to showcase chefs and food creators to
+            the public. People who love to eat have the opportunity to engage
+            with creative food curators, sample food and drinks, and purchase
+            items. People who come to Indulgent Fest have come to expect
+            absolute bliss from our wildly impressive chefs from all over the
+            country.
+          </div>
         </div>
         <br />
         <Button variant="primary" onClick={() => setModalShow(true)}>

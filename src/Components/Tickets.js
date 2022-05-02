@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import { Jumbotron, Card, CardBody, CardTitle } from "reactstrap";
 import Footer from "./Footer";
 import { connect } from "react-redux";
@@ -36,9 +36,9 @@ function Tickets(props) {
     <React.Fragment>
       <Jumbotron className="TicketJumbo">
         <div>
-          <Card>
-            <CardTitle className="ticket-head">Ticket Options</CardTitle>
-          </Card>
+            <div className="ticket-head about-header animate__animated animate__backInDown ">
+              Ticket Options
+            </div>
         </div>
         <br />
         <div className="row">
@@ -90,7 +90,7 @@ function Tickets(props) {
               className="addToCart cart1"
               href="#"
             >
-              Add to Cart
+              Add one to Cart
             </button>
             <br />
             <button
@@ -98,7 +98,7 @@ function Tickets(props) {
               className="addToCart cart1"
               href="#"
             >
-              Delete from Cart
+              Delete one from Cart
             </button>
           </Card>
           <Card className="TicketCard">
@@ -113,7 +113,7 @@ function Tickets(props) {
               className="addToCart cart2"
               href="#"
             >
-              Add to Cart
+              Add one to Cart
             </button>
             <br />
             <button
@@ -121,7 +121,7 @@ function Tickets(props) {
               className="addToCart cart1"
               href="#"
             >
-              Delete from Cart
+              Delete one from Cart
             </button>
           </Card>
         </div>

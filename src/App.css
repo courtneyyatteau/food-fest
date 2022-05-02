@@ -117,7 +117,8 @@ p {
 
 .ticket-head {
   text-align: center;
-  font-size: xx-large;
+  font-size: 70px;
+  margin-bottom: 10px;
 }
 
 .cardImage {
@@ -207,11 +208,21 @@ p {
 }
 
 .second-image {
+  --animate-duration: 1.5s;
+  --animate-delay: 1.5s;
+}
+
+.third-image {
   --animate-duration: 2s;
   --animate-delay: 2s;
 }
 
-.third-image {
+.fourth-image {
+  --animate-duration: 2.5s;
+  --animate-delay: 2.5s;
+}
+
+.fifth-image {
   --animate-duration: 3s;
   --animate-delay: 3s;
 }

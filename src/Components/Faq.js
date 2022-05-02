@@ -10,7 +10,9 @@ const Faq = (props) => {
         <div className="container">
           <div className="row">
             <div className="col content-holder">
-              <h1 className="about-header">FAQ</h1>
+              <h1 className="about-header animate__animated animate__backInDown ">
+                FAQ
+              </h1>
             </div>
           </div>
         </div>
@@ -19,12 +21,20 @@ const Faq = (props) => {
       <Accordion>
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="0">
+            <Accordion.Toggle
+              className="first-image animate__animated animate__fadeInUp"
+              as={Button}
+              variant="link"
+              eventKey="0"
+            >
               When and where is this event?
             </Accordion.Toggle>
           </Card.Header>
 
-          <Accordion.Collapse eventKey="0">
+          <Accordion.Collapse
+            className="first-image animate__animated animate__fadeIn"
+            eventKey="0"
+          >
             <Card.Body>
               This event takes place in Fake City, Fake State at the Fake Plaza
               on Fake Street. The event will be on Saturday, FakeMonth 10th from
@@ -35,12 +45,20 @@ const Faq = (props) => {
 
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="1">
+            <Accordion.Toggle
+              className="second-image animate__animated animate__fadeInUp"
+              as={Button}
+              variant="link"
+              eventKey="1"
+            >
               What do I get for the price of admission?
             </Accordion.Toggle>
           </Card.Header>
 
-          <Accordion.Collapse eventKey="1">
+          <Accordion.Collapse
+            className="first-image animate__animated animate__fadeIn"
+            eventKey="1"
+          >
             <Card.Body>
               Admission gets you entrance into our indulgent marketplace, where
               you will have access to various samples, foods, and beverages,
@@ -52,12 +70,20 @@ const Faq = (props) => {
 
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="2">
+            <Accordion.Toggle
+              className="third-image animate__animated animate__fadeInUp"
+              as={Button}
+              variant="link"
+              eventKey="2"
+            >
               Is there parking available at the event?
             </Accordion.Toggle>
           </Card.Header>
 
-          <Accordion.Collapse eventKey="2">
+          <Accordion.Collapse
+            className="first-image animate__animated animate__fadeIn"
+            eventKey="2"
+          >
             <Card.Body>
               Yes! There are two parking garages withing 0.2 miles from Fake
               Plaza. One is just off of Faker Street and the other is just off
@@ -68,12 +94,20 @@ const Faq = (props) => {
 
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="3">
+            <Accordion.Toggle
+              className="fourth-image animate__animated animate__fadeInUp"
+              as={Button}
+              variant="link"
+              eventKey="3"
+            >
               Will tickets be sold at the door?
             </Accordion.Toggle>
           </Card.Header>
 
-          <Accordion.Collapse eventKey="3">
+          <Accordion.Collapse
+            className="first-image animate__animated animate__fadeIn"
+            eventKey="3"
+          >
             <Card.Body>
               Yes, but they will be on a limited first come first serve basis.
               There is a limited amount of tickets sold day-of to make the
@@ -85,12 +119,20 @@ const Faq = (props) => {
 
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="4">
+            <Accordion.Toggle
+              className="fifth-image animate__animated animate__fadeInUp"
+              as={Button}
+              variant="link"
+              eventKey="4"
+            >
               Are children welcome to this event?
             </Accordion.Toggle>
           </Card.Header>
 
-          <Accordion.Collapse eventKey="4">
+          <Accordion.Collapse
+            className="first-image animate__animated animate__fadeIn"
+            eventKey="4"
+          >
             <Card.Body>Yes. Children under the age of 10 are free!</Card.Body>
           </Accordion.Collapse>
         </Card>
